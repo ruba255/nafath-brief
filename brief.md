@@ -20,10 +20,19 @@ The OWASP Mobile Application Security Verification Standard (MASVS) defines secu
 Resource: OWASP Mobile Application Security Verification Standard (MASVS) - https://mas.owasp.org/MASVS/
 
 ## Networking
+BGP connects internet networks by exchanging route announcements. In a route hijack, a network announces an unauthorized route for another network’s IP prefix, potentially causing traffic to be misdirected or disrupted. RPKI enables address holders to publish Route Origin Authorizations (ROAs), which routers can use to validate whether an announcing Autonomous System is authorized. Operators can configure policies to reject invalid announcements. However, RPKI origin validation does not validate the entire AS path or prevent every route leak or interception attack.
+
+Resource: RFC 6811 — BGP Prefix Origin Validation - https://www.rfc-editor.org/rfc/rfc6811
 
 ## Cybersecurity
+Log4Shell (CVE-2021-44228) was a critical vulnerability in Apache Log4j 2, a widely used Java logging library. In affected versions and configurations, attacker-controlled log data could trigger unsafe JNDI lookups and potentially execute code remotely. It was rated CVSS 10.0 because exploitation could be remote and cause severe impact. The main fix was upgrading affected Log4j versions; the initial 2.15.0 fix was incomplete in some configurations, so organizations needed later appropriate patched releases and verification.
+
+Resource: Apache Log4j CVEs - https://news.apache.org/foundation/entry/apache-log4j-cves
 
 ## Data
+A Software Bill of Materials (SBOM) is a structured inventory of software components and their supply-chain relationships. NTIA identifies seven minimum data fields: supplier name, component name, component version, other unique identifiers, dependency relationship, SBOM data author, and timestamp. These fields help organizations identify which applications include a vulnerable library and prioritize remediation. SBOMs should be machine-readable and kept current, but an inventory alone does not prove that a component is safe or vulnerability-free.
+
+Resource: The Minimum Elements for a Software Bill of Materials (SBOM) - https://www.ntia.gov/report/2021/minimum-elements-software-bill-materials-sbom
 
 ## Misconception in My Track
 
